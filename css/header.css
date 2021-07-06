@@ -1,16 +1,20 @@
 /* styling our header */
 header   {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
-  height: 15rem;
-  max-height: 15rem;
-  width: 99%;
+  top: 0rem;
+  left: 0rem;
+  height: 12rem;
+  max-height: 12rem;
+  width: 100%;
+  z-index: 2;
+  background: black;
 }
 
 /* logo */
 #logo         {
-
+  top: 2rem;
+  left: 2rem;
+  position:relative;
   width: 40vw;
   max-width: 15rem;
   max-width: 15rem;

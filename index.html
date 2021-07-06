@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
   </head>
@@ -17,16 +18,13 @@
           <a id="logo" href="main.html">
             <img src="Logos/giro-icon.svg" alt="Logo">
           </a>
-
-
-
-
-
+    <!--navigation bar setup-->
           <nav>
             <input class="check" type="checkbox">
             <div class="ham-menu">
                       <div class="menuline"></div>
             </div>
+    <!--hamburguer list-->
             <ul class='menulist'>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Comprar</a></li>
@@ -37,7 +35,55 @@
         </header>
 
         <div class="content-area">
-          <div class="content">Hello World.</div>
+          <!--Start the slider-->
+              <div class="slider">
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+
+                  <!--Slide images start-->
+                  <div class="slide first">
+                    <img src="Restitutus.jpg" alt="">
+                  </div>
+
+                  <div class="slide">
+                    <img src="Restitutus2.jpg" alt="">
+                  </div>
+
+                  <div class="slide">
+                    <img src="Restitutus3.jpg" alt="">
+                  </div>
+
+
+                  <!--aumtomatic navigation start-->
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                  </div>
+
+                </div>
+                <!--navigation start-->
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+
+                </div>
+              </div>
+              <!--Image slider end-->
+
+              <script type="text/javascript">
+              var counter = 1;
+              setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter>3){
+                  counter = 1;
+                }
+              }, 3000);
+              </script>
         </div>
 
   </body>
