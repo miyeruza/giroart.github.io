@@ -1,0 +1,38 @@
+/*estilos para comprar*/
+
+.content-area{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.Imgs{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.content-area a img:hover{
+  opacity: 50%;
+  transition: .5s;
+}
+
+
+.content-area a img{
+  width: 15rem;
+  height: 18rem;
+  transition: .5s;
+}
+
+
+@media only screen and (max-width:674px){
+
+@media only screen and (max-width:554px){
+
+  .content-area{
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }

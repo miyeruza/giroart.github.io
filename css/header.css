@@ -6,7 +6,7 @@ header   {
   height: 12rem;
   max-height: 12rem;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
   background: black;
 }
 
@@ -14,16 +14,11 @@ header   {
 #logo         {
   top: 2rem;
   left: 2rem;
-  position:relative;
-  width: 40vw;
-  max-width: 15rem;
-  max-width: 15rem;
+  position: relative;
 }
 #logo img    {
   width: 40vw;
-  max-width: 15rem;
-  max-width: 15rem;
-  vertical-align: top;
+  max-width: 10rem;
 }
 
 /*nav bar*/
@@ -59,7 +54,7 @@ nav{
     margin: 10px 30px 0px 0px;
     opacity: 0;
     z-index: 3;
-    display: inline-block;
+    display: none;
 }
 
 .ham-menu{
@@ -106,6 +101,13 @@ nav{
       padding-top: 2rem;
   }
 
+  /* logo */
+  #logo         {
+    top: 1rem;
+    left: 1rem;
+    position: relative;
+  }
+
   .menulist{
     position: fixed;
     width: 100%;
@@ -135,7 +137,12 @@ nav{
   .menulist li a{
       text-decoration: none;
       color: white;
+    }
+  .check{
+    display: inline-block;
   }
+
+
   .check:checked ~ .menulist{
     right: 0;
   }
