@@ -1,0 +1,21 @@
+.Social{
+  display: flex;
+  justify-content: center;
+
+}
+
+.Social a{
+  background-color: white;
+  border: none;
+  width: 15vw;
+  height: 15vw;
+  color: black;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15rem 7rem 15rem;
+  cursor: pointer;
+}

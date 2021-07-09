@@ -2,7 +2,7 @@
 
 :root{
     --black: #000000;
-    --gray: #1b1b1b;
+    --gray: #0f0f0f;
     --white: #c5c5c5;
     --f-family: 'Poppins', sans-serif;
     --blue-color: #3b8da1;
@@ -25,6 +25,5 @@ body{
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: var(--black);
+
 }
