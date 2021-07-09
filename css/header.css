@@ -3,11 +3,11 @@ header   {
   position: fixed;
   top: 0rem;
   left: 0rem;
-  height: 12rem;
-  max-height: 12rem;
+  height: 13rem;
   width: 100%;
   z-index: 2;
   background: black;
+
 }
 
 /* logo */
@@ -27,6 +27,13 @@ nav{
     float: right;
     padding-top: 7rem;
 }
+
+.content-area{
+  position: absolute;
+  top: 13rem;
+  left: 0rem;
+}
+
 
 .menulist {
     list-style: none;

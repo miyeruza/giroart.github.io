@@ -1,18 +1,12 @@
 /*sliders*/
-.slider{
-  width: 100vw;
-  height: 42vw;
-  position: relative;
-  top: 15rem;
 
+/*aspect ratio of sliders is 42:100*/
+.slider{
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
 }
 
 .slides{
   width: 500%;
-  height: 100;
   display: flex;
 }
 
@@ -32,13 +26,18 @@
 
 /*css for manual slide navigation*/
 
+/*This is probably being deleted*/
+
 .navigation-manual{
+  display: none;
+/*  This makes the buttons appear
   position: absolute;
   width: 800px;
   margin-top: -40px;
-  display: flex;
   justify-content: center;
+*/
 }
+
 
 .manual-btn{
   border: 2px solid var(--blue-color);
@@ -69,8 +68,9 @@
   margin-left: -40%;
 }
 
-
 /*css for automatic navigation*/
+
+
 
 .navigation-auto{
   position:absolute;
