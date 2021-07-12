@@ -1,7 +1,15 @@
+.content-area{
+
+}
+
 .Social{
   display: flex;
   justify-content: center;
+}
 
+.Social-links{
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .Social a{
@@ -15,7 +23,17 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 15rem 7rem 15rem;
+  font-size: 1.6rem;
+  margin: 6vw 4vw 6vw;
   cursor: pointer;
+}
+
+@media only screen and (max-width:425px){
+  .Social a{
+    width: 70vw;
+    height: 70vw;
+    margin: 0;
+    margin-top: 3rem;
+    margin-left: 15vw;
+  }
 }

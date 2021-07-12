@@ -1,112 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
 
   <head>
     <meta charset="utf-8">
     <title>Giro Art Toy</title>
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
   </head>
 
   <body>
-    <!--Header-->
-        <header>
-          <a id="logo" href="index.html">
-            <img src="Logos/giro-icon.svg" alt="Logo">
-          </a>
-    <!--navigation bar setup-->
-          <nav>
-            <input class="check" type="checkbox">
-            <div class="ham-menu">
-                      <div class="menuline"></div>
-            </div>
-    <!--hamburguer list-->
-            <ul class='menulist'>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="./comprar.html">Comprar</a></li>
-                <li><a href="./informacion.html">Información</a></li>
-            </ul>
-          </nav>
-
-        </header>
-
-        <div class="content-area">
-          <!--Start the slider-->
-              <div class="slider">
-                <div class="slides">
-                  <input type="radio" name="radio-btn" id="radio1">
-                  <input type="radio" name="radio-btn" id="radio2">
-                  <input type="radio" name="radio-btn" id="radio3">
-
-                  <!--Slide images start-->
-                  <div class="slide first">
-                    <img src="Restitutus.jpg" alt="">
-                  </div>
-
-                  <div class="slide">
-                    <img src="Restitutus2.jpg" alt="">
-                  </div>
-
-                  <div class="slide">
-                    <img src="Restitutus3.jpg" alt="">
-                  </div>
-
-
-                  <!--aumtomatic navigation start
-                  <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                  </div>
--->
-
-
-                </div>
-                <!--navigation start-->
-                  <!-- Im probably removing this.-->
-
-                  <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-
-                    </div>
-
-              </div>
-              <!--Image slider end-->
-
-              <!--Social-->
-
-              <ul class="Social">
-                <a href="https://www.facebook.com" class="button">Facebook</a>
-                <a href="https://www.youtube.com" class="button">Youtube</a>
-                <a href="https://www.instagram.com" class="button">Instagram</a>
-              </ul>
-
-
-              <!--footer-->
-
-              <div class="footer">
-
-              </div>
-
-              <script type="text/javascript">
-              var counter = 1;
-              setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if (counter>3){
-                  counter = 1;
-                }
-              }, 3000);
-              </script>
+    <header>
+      <!--logo-->
+      <a id="logo" href="index.html">
+        <img src="Logos/giro-icon.svg" alt="Logo">
+      </a>
+      <!--navigation bar setup-->
+      <nav>
+        <input class="check" type="checkbox">
+        <div class="ham-menu">
+          <div class="menuline"></div>
         </div>
+        <!--hamburguer list-->
+        <ul class='menulist'>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="./comprar.html">Comprar</a></li>
+          <li><a href="./informacion.html">Información</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <div class="content-area">
+      <!--slider starts-->
+      <div class="slider">
+        <div id="slides">
+          <!--slides images-->
+          <div class="slide">
+            <picture>
+              <source srcset="./Imagenes/Restitutus-S.jpg" media="(max-width: 425px)">
+              <source srcset="./Restitutus.jpg">
+              <img src="Restitutus.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="slide">
+            <picture>
+              <source srcset="./Imagenes/Restitutus2-S.jpg" media="(max-width: 425px)">
+              <source srcset="./Restitutus2.jpg">
+              <img src="Restitutus2.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="slide">
+            <picture>
+              <source srcset="./Imagenes/Restitutus3-S.jpg" media="(max-width: 425px)">
+              <source srcset="./Restitutus3.jpg">
+              <img src="Restitutus3.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!--Social-->
+      <div class="Social">
+        <ul class="Social-links">
+          <a href="https://www.facebook.com" class="button">Facebook</a>
+          <a href="https://www.youtube.com" class="button">Youtube</a>
+          <a href="https://www.instagram.com" class="button">Instagram</a>
+        </ul>
+      </div>
+
+
+      <!--footer-->
+      <div class="footer"></div>
+
+      <!--moves slides-->
+      <script type="text/javascript">
+        var slide = -100;
+
+        setTimeout(function(){
+          document.getElementById('slides').style.left = "-100vw";
+        },3000)
+
+        setInterval(function(){
+          document.getElementById('slides').style.left = String(slide)+"vw";
+          slide -= 100;
+          if (slide == -300){
+            slide = 0;
+          }
+        }, 3000);
+      </script>
+    </div>
   </body>
 </html>

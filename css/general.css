@@ -7,7 +7,6 @@
     --f-family: 'Poppins', sans-serif;
     --blue-color: #3b8da1;
     --orange-color: #f2851f;
-
 }
 
 *{
@@ -25,5 +24,4 @@ body{
   height: 100vh;
   display: flex;
   justify-content: center;
-
 }

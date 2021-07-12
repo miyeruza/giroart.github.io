@@ -1,104 +1,16 @@
-/*sliders*/
 
-/*aspect ratio of sliders is 42:100*/
 .slider{
   overflow: hidden;
 }
 
-.slides{
-  width: 500%;
-  display: flex;
-}
+#slides{
+    display: flex;
+    width: 300%;
+    position: relative;
+    transition: 2s;
 
-.slides input{
-  display: none;
-}
-
-.slide{
-  width:20%;
-  transition:2s;
 }
 
 .slide img{
-  width: 100%;
-  height: 100%;
-}
-
-/*css for manual slide navigation*/
-
-/*This is probably being deleted*/
-
-.navigation-manual{
-  display: none;
-/*  This makes the buttons appear
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  justify-content: center;
-*/
-}
-
-
-.manual-btn{
-  border: 2px solid var(--blue-color);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-  margin-right:40px;
-
-}
-
-.manual-btn:hover{
-  background: var(--blue-color)
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-
-/*css for automatic navigation*/
-
-
-
-.navigation-auto{
-  position:absolute;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div{
-  border:2px solid var(--blue-color);
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: var(--blue-color);
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: var(--blue-color);
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: var(--blue-color);
+  width: 103%;
 }
