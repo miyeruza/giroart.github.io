@@ -1,20 +1,21 @@
 /*estilos para comprar*/
 
-.content-area{
+.store{
   padding-top: 0rem;
-  padding: 5rem;
-  margin-top: -5rem;
-
+  padding: 2vw;
+  margin-top: -2vw;
+  display: flex;
+  justify-content: center;
 }
 
 .itm{
   margin-top: 0;
-  margin: 5rem;
-  height: 20vw;
+  margin: 2vw;
+  height: 30vw;
   background-color: black;
-  padding: 3rem;
+  padding: 1vw;
   border-radius: 10px;
-  width: 40%;
+  width: 45%;
   display: inline-block;
 }
 
@@ -27,7 +28,7 @@
   display: inline-block;
 }
 
-.content-area a img{
+.store a img{
   background-color: black;
   width:50%;
   height: 100%;
@@ -36,7 +37,7 @@
   display: inline-block;
 }
 
-.content-area a img:hover{
+.store a img:hover{
   opacity: 50%;
   transition: .5s;
 
@@ -46,9 +47,31 @@
 
 @media only screen and (max-width:554px){
 
-  .content-area{
+  .store{
     width: 95vw;
     display: flex;
     justify-content: center;
     margin-top: 0;
+  }
+
+  .itm{
+    margin-top: 0;
+    margin: 2vw;
+    height: 30vh;
+    background-color: black;
+    padding: 1vw;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .store a img{
+    background-color: black;
+    min-width: 20vh;
+    min-height: 25vh;
+    max-width:25vh;
+    max-height: 30vh;
+    overflow: hidden;
+    border-radius: 10px;
+    display: inline-block;
   }
